@@ -19,18 +19,24 @@
     "scrap"
   ],
   "devDependencies": {
+    "chai": "^3.3.0",
     "gulp": "^3.6.0",
+    "gulp-coveralls": "^0.1.0",
     "gulp-eslint": "^1.0.0",
     "gulp-exclude-gitignore": "^1.0.0",
     "gulp-istanbul": "^0.9.0",
     "gulp-mocha": "^2.0.0",
-    "gulp-plumber": "^1.0.0",
     "gulp-nsp": "^0.4.5",
-    "gulp-coveralls": "^0.1.0"
+    "gulp-plumber": "^1.0.0",
+    "sinon": "^1.17.1"
   },
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "lodash": "^3.10.1"
+  }
 }
