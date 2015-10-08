@@ -34,7 +34,7 @@ MIT © [Paulo Luan](https://github.com/pauloluan/)
 [travis-url]: https://travis-ci.org/pauloluan/fipe-crawler
 [daviddm-image]: https://david-dm.org/pauloluan/fipe-crawler.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/pauloluan/fipe-crawler
-[coveralls-image]: https://coveralls.io/repos/pauloluan/fipe-crawler/badge.svg
-[coveralls-url]: https://coveralls.io/r/pauloluan/fipe-crawler
+[coveralls-image]: https://coveralls.io/repos/PauloLuan/fipe-crawler/badge.svg?branch=master&service=github
+[coveralls-url]: https://coveralls.io/github/PauloLuan/fipe-crawler
 [bithound-image]: https://www.bithound.io/github/PauloLuan/fipe-crawler/badges/score.svg
 [bithound-url]: https://www.bithound.io/github/PauloLuan/fipe-crawler
