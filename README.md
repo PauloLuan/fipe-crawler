@@ -30,7 +30,7 @@ MIT © [Paulo Luan](https://github.com/pauloluan/)
 
 [npm-image]: https://badge.fury.io/js/fipe-crawler.svg
 [npm-url]: https://npmjs.org/package/fipe-crawler
-[travis-image]: https://travis-ci.org/pauloluan/fipe-crawler.svg?branch=master
+[travis-image]: https://api.travis-ci.org/PauloLuan/fipe-crawler.svg?branch=master
 [travis-url]: https://travis-ci.org/pauloluan/fipe-crawler
 [daviddm-image]: https://david-dm.org/pauloluan/fipe-crawler.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/pauloluan/fipe-crawler
