@@ -1,4 +1,10 @@
-# fipe-crawler [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# fipe-crawler 
+[![Build Status][travis-image]][travis-url] 
+[![Coverage percentage][coveralls-image]][coveralls-url]
+[![bitHound Score](bithound-image)][bithound-url]
+[![NPM version][npm-image]][npm-url] 
+[![Dependency Status][daviddm-image]][daviddm-url] 
+
 > crawler dos dados da tabela fipe
 
 
@@ -30,3 +36,5 @@ MIT © [Paulo Luan](https://github.com/pauloluan/)
 [daviddm-url]: https://david-dm.org/pauloluan/fipe-crawler
 [coveralls-image]: https://coveralls.io/repos/pauloluan/fipe-crawler/badge.svg
 [coveralls-url]: https://coveralls.io/r/pauloluan/fipe-crawler
+[bithound-image]: https://www.bithound.io/github/PauloLuan/fipe-crawler/badges/score.svg
+[bithound-url]: https://www.bithound.io/github/PauloLuan/fipe-crawler
