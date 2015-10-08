@@ -22,27 +22,20 @@ gulp.task('nsp', function (cb) {
 });
 
 gulp.task('pre-test', function () {
-  return gulp.src('lib\**\*.js')
-    .pipe(istanbul({
-      includeUntested: true
-    }))
+  return gulp.src(['lib/**/*.js'])
+    // Covering files
+    .pipe(istanbul())
+    // Force `require` to return covered files
     .pipe(istanbul.hookRequire());
 });
 
-gulp.task('test', ['pre-test'], function (cb) {
-  var mochaErr;
-
-  gulp.src('test/**/*.js')
-    .pipe(plumber())
-    .pipe(mocha({reporter: 'spec'}))
-    .on('error', function (err) {
-      mochaErr = err;
-    })
-    .pipe(istanbul.writeReports())
-    .on('end', function () {
-      cb(mochaErr);
-    });
+gulp.task('test', ['pre-test'], function () {
+  return gulp.src(['test/*.js'])
+    .pipe(mocha())
+    // Creating the reports after tests ran
+    .pipe(istanbul.writeReports());
 });
+
 
 gulp.task('coveralls', ['test'], function () {
   if (!process.env.CI) {
