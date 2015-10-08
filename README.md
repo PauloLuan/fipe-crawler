@@ -1,7 +1,7 @@
 # fipe-crawler 
 [![Build Status][travis-image]][travis-url] 
 [![Coverage percentage][coveralls-image]][coveralls-url]
-[![bitHound Score](bithound-image)][bithound-url]
+[![BitHound Score][bithound-image]][bithound-url]
 [![NPM version][npm-image]][npm-url] 
 [![Dependency Status][daviddm-image]][daviddm-url] 
 
