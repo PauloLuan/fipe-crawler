@@ -6,25 +6,22 @@ var assert = require('assert'),
 describe('fipe-crawler', function() {
   this.timeout(6000);
 
-  var brands;
+  var brands, models;
 
-  it('should do a request and return the car brands', function(done) {
-    fipeCrawler.getCarBrands()
-      .then(function(receivedBrands) {
-        brands = JSON.parse(receivedBrands);
+  it('should do a request and return the car brands', function() {
+    brands = fipeCrawler.getCarBrands();
 
-        assert(brands !== null, 'expect car brands not to be null');
-        assert(brands.length > 0, 'expect car brands to has more than one brand');
-
-        done();
-      });
+    assert(brands !== null, 'expect car brands not to be null');
+    assert(brands.length > 0, 'expect car brands to has more than one brand');
   });
 
   xit('should download car models using the returned brands', function(done) {
-    fipeCrawler.getCarModels()
-      .then(function(models) {
+    fipeCrawler.getCarModels(brands)
+      .then(function(receivedModels) {
+        models = JSON.parse(receivedModels);
+
         assert(models !== null, 'expect car models not to be null');
-        assert(models.length > 0, 'expect car models to has more than one');
+        assert(models.Modelos.length > 0, 'expect car models to has more than one');
 
         done();
       });
