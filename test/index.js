@@ -22,6 +22,7 @@ describe('fipe-crawler', function() {
   });
 
   it('should download car models using years', function() {
+    var mockModels = require('./mocks/2-IndicesConsulta-ConsultarModelos.json');
     var years = fipeCrawler.getCarYear();
 
     assert(years !== null, 'expect car years not to be null');
@@ -29,6 +30,7 @@ describe('fipe-crawler', function() {
   });
 
   it('should do what...', function() {
+    var mockYears = require('./mocks/3-IndicesConsulta-ConsultarAnoModelo.json');
     var models = fipeCrawler.getCarModelByYear();
 
     assert(models !== null, 'expect car models not to be null');
@@ -36,6 +38,7 @@ describe('fipe-crawler', function() {
   });
 
   it('download the complete information about a car model', function() {
+    var mockModels = require('./mocks/4-IndicesConsulta-ConsultarModelosAtravesDoAno.json');
     var carModel = fipeCrawler.getCarWithAllParams();
 
     assert(carModel !== null, 'expect car carModel not to be null');
