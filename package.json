@@ -37,7 +37,7 @@
   "license": "MIT",
   "dependencies": {
     "colors": "^1.1.2",
-    "lodash": "^3.10.1",
+    "lodash": "^4.17.15",
     "sync-request": "^2.0.1"
   }
 }
